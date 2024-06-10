@@ -1,7 +1,7 @@
 import yt_dlp
 
 
-link = input("Ingresa el link dek video: ")
+link = input("Ingresa el link del video: ")
 print("deseas descargar el video o solo el audio?: \n1- video(webm)\n2- audio(mp3)")
 opcion = input("elige una opcion: ")
 
@@ -27,3 +27,6 @@ elif opcion == "2":
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([link])
+
+else:
+    print("ingresa una de las dos opciones")
