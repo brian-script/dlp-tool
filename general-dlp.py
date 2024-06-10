@@ -7,7 +7,7 @@ opcion = input("elige una opcion: ")
 
 if opcion == "1":
     ydl_opts = {
-            "format": "bestvideo/bestaudio",}
+            "format": "bestvideo+bestaudio/best",}
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([link])
 
